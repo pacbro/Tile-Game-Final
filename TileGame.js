@@ -236,14 +236,14 @@ function endgame(){
      //Display the game message
      gameMessage = "You made it out of the cave alive! " + "Final Score: " + score;
       //play win audio
-      var audioWin = new Audio('ffWin.mp3');
+      var audioWin = new Audio('audio/ffWin.mp3');
       audioWin.play();
   }
     else if (gameObjects[rockRow][rockColumn])
     {
         gameMessage = "You have been crushed by an enormous boulder! Your consciousness starts to fade...";
         //play lose audio
-        var audioLose1 = new Audio('fflose.mp3');
+        var audioLose1 = new Audio('audio/fflose.mp3');
         audioLose1.play();
     }
     else
@@ -289,26 +289,26 @@ function render()
           break;
 
         case fox:
-          cell.src = "FXSprite.png";
+          cell.src = "images/FXSprite.png";
           break;
 
         case chest:
-          cell.src = "TCSprite.png";
+          cell.src = "images/TCSprite.png";
           break;
 
         case home:
-          cell.src = "HMSprite.png";
+          cell.src = "images/HMSprite.png";
           break;
       }
 
          switch(gameObjects[row][column])
       {
         case explorer:
-        cell.src = "EXSprite.jpg";
+        cell.src = "images/EXSprite.jpg";
         break;
   
         case rock:
-        cell.src = "BRSprite.png";
+        cell.src = "images/BRSprite.png";
         break;
  
       }
