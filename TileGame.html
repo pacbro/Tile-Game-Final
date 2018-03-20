@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <script type="text/javascript" src="TileGame.js"></script>
+  <title>JS Tile Game</title>
+</head>
+<body>
+
+    <div id="splashscreen">
+    <h2>Ready to play a game?</h2>
+        <h3>The goal of this game is to get to the end with as much treasure, and saving as many cute foxes as you possibly can without getting crushed by the gigantic boulder rolling your way. An Indiana Jones style tile game, with a twist! Enjoy
+            <br><br>
+        <a href="#" class="enter_link">Start the game</a>
+        </h3>    
+</div>
+
+    
+<div id="stage"></div>
+<p id="output"></p>
+    
+<style>
+#stage
+{
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+
+.cell
+{
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+
+p
+{
+  width: 400px;
+}
+    
+#splashscreen {
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    width:100%;
+    background-color:white;
+}
+</style>    
+</body>
+</html>
